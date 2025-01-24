@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Fitness - About Us</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: -5px;
+            left: 0;
+            background-color: #000;
+            z-index: 1000;
+            animation: slideDown 1s ease-out;
+            padding: 10px 0; /* Reduced padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* Removed border-bottom */
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            /* Added margin-top */
+            margin-top: 2px; 
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.4s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #000;
+            background: #fff;
+            border-radius: 5px;
+            transform: scale(1.1);
+            padding: 5px 10px;
+        }
+
+        .team-section {
+            padding: 100px 20px 50px;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            color: #ffffff;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .team-section h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: #ffffff;
+            margin: 10px auto;
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            justify-items: center;
+            padding: 20px;
+        }
+
+        .team-member {
+            width: 100%;
+            max-width: 300px;
+            background: #222;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgb(88, 17, 1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 18px rgb(213, 1, 1);
+        }
+
+        .team-member img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 1%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .team-member h3 {
+            margin: 20px 0 10px;
+            font-size: 1.8rem;
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .team-member p {
+            font-size: 1.1rem;
+            color: #d1d1d1;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1rem;
+            border-top: 2px solid #fff;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        footer a:hover {
+            color: #b3b3b3;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="us.html">About</a></li>
+                <li><a href="index3.html">Register</a></li>
+                <li><a href="jr.html">Team</a></li>
+                <li><a href="font.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="bla1.jpg" alt="Trainer 1">
+                    <h3>John Doe</h3>
+                    <p>Head Trainer</p>
+                </div>
+                <div class="team-member">
+                    <img src="bla2.jpg" alt="Trainer 2">
+                    <h3>Jane Smith</h3>
+                    <p>Nutrition Expert</p>
+                </div>
+                <div class="team-member">
+                    <img src="bla3.jpg" alt="Trainer 3">
+                    <h3>Mike Johnson</h3>
+                    <p>Yoga Instructor</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Alpha Fitness. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

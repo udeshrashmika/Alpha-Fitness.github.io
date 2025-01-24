@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Registration</title>
+    <link rel="stylesheet" href="gym45.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="us.html">About</a></li>
+            <li><a href="index3.html">Register</a></li>
+            <li><a href="jr.html">Team</a></li>
+            <li><a href="font.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>Membership Plans</h2>
+        <div class="membership-options">
+            <div class="membership-card">
+                <h3>Annual</h3>
+                <p>Treadmill</p>
+                <p>Exercises</p>
+                <p>Rs. 15,000</p>
+            </div>
+            <div class="membership-card">
+                <h3>Monthly</h3>
+                <p>Treadmill</p>
+                <p>Exercises</p>
+                <p>Rs. 4,000</p>
+            </div>
+            <div class="membership-card">
+                <h3>Daily</h3>
+                <p>Treadmill</p>
+                <p>Exercises</p>
+                <p>Rs. 500</p>
+            </div>
+        </div>
+
+        <form action="submit_form.php" method="POST">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="member">Membership Type:</label>
+            <select id="member" name="member" required>
+                <option value="">Select</option>
+                <option value="annual">Annual</option>
+                <option value="monthly">Monthly</option>
+                <option value="daily">Daily</option>
+            </select>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter first name" required pattern="[a-zA-Z]+" title="Only letters are allowed.">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter last name" required pattern="[a-zA-Z]+" title="Only letters are allowed.">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter contact number" required pattern="[0-9]{10}" title="Contact number must be 10 digits.">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

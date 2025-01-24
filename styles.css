@@ -1,0 +1,275 @@
+
+body {
+  font-family: 'Montserrat', sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: #000; 
+  color: #fff; 
+  overflow-x: hidden; 
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.main-header {
+  background: #000; 
+  color: #fff; 
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  animation: slideDown 1s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4); 
+}
+
+
+nav {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #000;
+  background: #fff; 
+  border-radius: 5px;
+  transform: scale(1.1);
+  padding: 5px 10px;
+}
+
+
+.btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e64a19;
+  transform: scale(1.1);
+}
+
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-background.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8); 
+}
+
+.hero p {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+
+footer {
+  background: #000; 
+  color: #fff; 
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #fff; 
+}
+
+footer a {
+  color: #fff; 
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer a:hover {
+  color: #b3b3b3; 
+}
+
+
+.quick-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.quick-menu li {
+  display: inline-block;
+}
+
+.quick-menu a {
+  color: #ff5722; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.quick-menu a:hover {
+  color: #fff; 
+  transform: scale(1.1);
+}
+
+
+.gallery-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-bottom: 10px solid #ff5722; 
+}
+
+.gallery-slider {
+  display: flex;
+  transition: transform 0.25s ease;
+  gap: 1rem; 
+}
+
+.slide {
+  flex: 0 0 80%; 
+  transition: transform 0.3s ease; 
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(255, 0, 0, 0.4); 
+}
+
+
+footer {
+  background-color: #000; 
+  color: #fff; 
+  padding: 10px 0;
+  text-shadow: 0 0 10px #ff5722; 
+  font-size: 1em;
+}
+
+.card-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  padding: 1rem;
+}
+
+.card {
+  flex: 1 1 300px; 
+  max-width: 300px; 
+  border: 1px solid #ff5722; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(255, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(255, 0, 0, 0.6); 
+}
+
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  height: 150px; 
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center; 
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000; 
+  text-shadow: 0 0 10px #fefefe; 
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #000000; 
+  line-height: 1.4;
+}
+
+.text-body-secondary {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 3em;
+  }
+
+  .hero p {
+      font-size: 1.2em;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav li {
+      margin-bottom: 15px;
+  }
+
+  nav a {
+      font-size: 1em;
+  }
+}
